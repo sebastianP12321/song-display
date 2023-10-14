@@ -92,7 +92,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  transition: background-color 0.5s, font-size 0.15s;
+  transition: background-color 0.5s;
   border-bottom: solid 2px rgb(80, 0, 0);
   background-color: rgb(29, 0, 28);
   user-select: none;
@@ -105,6 +105,11 @@ body {
 }
 .sidebar-button:hover {
   background-color: rgb(88, 0, 76);
+}
+.sidebar-button > p {
+  transition: font-size 0.15s;
+}
+.sidebar-button:hover > p {
   font-size: 1.1rem;
 }
 .note {
