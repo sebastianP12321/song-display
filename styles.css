@@ -1,0 +1,211 @@
+* {
+  font-family: sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(rgb(37, 0, 37), rgb(8, 0, 8));
+  background-attachment: fixed;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.link-bar {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(49, 0, 71);
+  border-bottom: 2px solid rgb(44, 44, 44);
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-left: 8px;
+  border: 2px solid rgb(107, 0, 102);
+}
+.avatarImg {
+  width: 70px;
+  height: 70px;
+}
+.interface {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  height: 100%;
+  width: 300px;
+  border-right: solid 2px rgb(44, 44, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(196, 3, 255);
+  font-weight: 600;
+  align-self: flex-start;
+  position: sticky;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 90px;
+}
+.add-song {
+  height: 80px;
+  width: 100%;
+  border-bottom: solid 2px rgb(219, 0, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: font-size 0.5s, background-color 0.5s;
+}
+.add-song:hover {
+  font-size: 1.1rem;
+  background-color: pink;
+}
+.add-symbol {
+  width: 50px;
+  height: 50px;
+  margin-left: -10px;
+  transition: transform 0.5s;
+}
+.add-song:hover img {
+  transform: scale(1.2) rotate(180deg);
+}
+.sidebar::after {
+  content: "";
+  height: 20px;
+  width: 100%;
+  display: inline-block;
+}
+.sidebar-button {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  transition: background-color 0.5s, font-size 0.15s;
+  border-bottom: solid 2px rgb(80, 0, 0);
+  background-color: rgb(29, 0, 28);
+  user-select: none;
+  cursor: pointer;
+}
+.active {
+  background-color: rgb(194, 0, 168) !important;
+  transition: background-color 0s;
+  color: rgb(36, 0, 34);
+}
+.sidebar-button:hover {
+  background-color: rgb(88, 0, 76);
+  font-size: 1.1rem;
+}
+.note {
+  width: 20px;
+  height: 20px;
+  margin: -30px;
+}
+
+.main-display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.image-storage {
+  width: 60%;
+  height: 300px;
+  margin: 0;
+}
+.cover-art {
+  object-fit: contain;
+  max-height: 350px;
+  max-width: 100%;
+  border: solid 2px gray;
+}
+.song-info {
+  width: 68%;
+  height: 1200px;
+  text-overflow: wrap;
+  line-height: 1.8rem;
+  letter-spacing: 0.06rem;
+  color: pink;
+  text-align: center;
+  word-wrap: break-word;
+}
+.additional-info {
+  width: 250px;
+  height: 600px;
+  background-color: rgb(44, 44, 44);
+  align-self: flex-start;
+  position: sticky;
+  top: 90px;
+}
+.editor {
+  width: 600px;
+  height: 460px;
+  background-color: rgb(29, 0, 28);
+  position: absolute;
+  left: 350px;
+  bottom: -500px;
+  border: solid 2px gray;
+  border-radius: 0 10px 10px 0;
+  transition: opacity 0.3s;
+}
+.row-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 36px;
+  margin-top: 0;
+}
+.row-cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: pink;
+}
+.input-style {
+  background-color: rgb(17, 0, 13);
+  color: pink;
+}
+.area-style {
+  width: 80%;
+  height: 200px;
+  resize: none;
+  overflow-y: auto;
+}
+.final-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.final-button {
+  width: 50%;
+  height: 81px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(240, 95, 253);
+  color: purple;
+  font-size: 2rem;
+}
+.invisible {
+  width: 220px;
+  top: -23px;
+  left: -10px;
+  height: 100px;
+  position: absolute;
+  z-index: 5;
+}

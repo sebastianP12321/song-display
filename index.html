@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="editor" id="editor">
+      <div class="row-inputs">
+        <div class="row-cols">
+          <p>Title:</p>
+          <input
+            type="text"
+            class="input-style"
+            id="title"
+            required
+            placeholder="title goes here"
+          />
+        </div>
+        <div class="row-cols">
+          <p>Cover Art link:</p>
+          <input
+            type="text"
+            class="input-style"
+            id="cover"
+            required
+            placeholder="cover art link goes here"
+          />
+        </div>
+      </div>
+      <div class="row-cols">
+        <p>Description:</p>
+        <textarea
+          class="input-style area-style"
+          id="area"
+          required
+          placeholder="describe your song!"
+        ></textarea>
+      </div>
+      <div class="final-controls">
+        <button class="final-button discard" onclick="discardFn()">
+          Discard
+        </button>
+        <input type="submit" class="final-button" onclick="submit()" />
+      </div>
+    </div>
+    <div class="link-bar">
+      <div class="avatar">
+        <img src="avatar.png" class="avatarImg" />
+      </div>
+    </div>
+    <div class="interface">
+      <div class="sidebar">
+        <div class="add-song">
+          <a href="#editor"><div class="invisible"></div></a>
+          <img src="addSymbol.png" class="add-symbol" />Add a Song!
+        </div>
+
+        <div class="sidebar-button" id="end story">
+          <img src="music note3.png" class="note" />
+          <p>End Story</p>
+        </div>
+        <div class="sidebar-button" id="beacon">
+          <img src="music note3.png" class="note" />
+          <p>Beacon</p>
+        </div>
+        <div class="sidebar-button" id="calamity">
+          <img src="music note3.png" class="note" />
+          <p>Calamity</p>
+        </div>
+        <div class="sidebar-button active" id="overload">
+          <img src="music note3.png" class="note" />
+          <p>Overload</p>
+        </div>
+        <div class="sidebar-button" id="psychosis">
+          <img src="music note3.png" class="note" />
+          <p>Psychosis</p>
+        </div>
+        <div class="sidebar-button" id="victory">
+          <img src="music note3.png" class="note" />
+          <p>Victory</p>
+        </div>
+        <div class="sidebar-button" id="skyscraper">
+          <img src="music note3.png" class="note" />
+          <p>Skyscraper</p>
+        </div>
+      </div>
+      <div class="main-display">
+        <div class="image-storage">
+          <img src="overloadImg.jpg" class="cover-art" />
+        </div>
+        <div class="song-info">
+          <p class="information">
+            Overload is the first song on my channel to ever surpass 1000 views.
+            Granted, maybe not the biggest thing one could achieve, but it was a
+            giant milestone for me. It's also the first track, where i started
+            to really get into the darksynth musical aesthetic. The sounds in
+            this track are far grittier than what i'd usually produce, and none
+            of the parts are (overly) rainbowy. It was one of my most proud
+            creations for a good while. At least before i created Beacon.
+          </p>
+        </div>
+      </div>
+      <div class="additional-info"></div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
